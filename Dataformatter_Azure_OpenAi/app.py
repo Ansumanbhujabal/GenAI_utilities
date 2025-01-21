@@ -13,12 +13,13 @@ llm = AzureChatOpenAI(
     max_retries=2,
 )
 
+
 messages = [
     (
         "system",
         "You are a helpful Senior SEO content writer. Format and rewrite this ",
     ),
-    ("human", "Applicants must have&nbsp;passed a high schoolThe following curricular requirements are&nbsp;strongly recommended:Four years of EnglishThree years of mathematics (minimum course work equivalent to Algebra I, Geometry, Algebra II)Three years of science (two of which must be lab science)Two years of social scienceTwo years of language study other than English"),
+    ("human","Applicants must have&nbsp;passed a high schoolSubjects required :Four years of EnglishThree years of mathematics (minimum course work equivalent to Algebra I, Geometry, Algebra II)Three years of science (two of which must be lab science)Two years of social scienceTwo years of language study other than English"),
 ]
 ai_msg = llm.invoke(messages)
 ai_msg
